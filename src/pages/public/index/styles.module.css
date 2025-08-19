@@ -1,0 +1,8 @@
+
+.rootContainer{
+    background-image: url("/src/assets/images/public/index/bg.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100vw;
+    height: 100vh;
+}

@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter , Link, Route, Routes } from "react-router-dom";
 import CommonHeader from "./common/template/header/header";
+import HomePage from "./pages/public/index/index"
+import Homepage from "./pages/public/index/index";
 
 
 
@@ -22,23 +24,12 @@ function App() {
     <BrowserRouter style={ styles.rootContainer }>
         <div style={ styles.rootContainer }>
             <CommonHeader />
-
+            <Routes>
+                <Route path="/" element={ <HomePage /> } />
+            </Routes>
         </div>
     </BrowserRouter>
   );
 }
-
-function Home() {
-  return <h1>Home Page</h1>;
-}
-
-function About() {
-  return <h1>About Page</h1>;
-}
-
-function Contact() {
-  return <h1>Contact Page</h1>;
-}
-
 
 export default App;
